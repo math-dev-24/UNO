@@ -1,0 +1,340 @@
+*
+{
+    font-size: 14px;
+    font-family: 'Goldman', cursive;
+}
+
+body
+{
+    background-image: url("../img/fond2K.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+}
+/* header */
+
+header
+{
+    width: 100%;
+}
+header h1
+{
+    font-weight: bold;
+    font-size: 2.5em;
+    color: white;
+    margin-top: 50px;
+}
+
+.underline::after
+{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin: 0 ;
+    background: var(--main-color);
+    transition: width 0.4s ease-in-out;
+}
+.underline:hover::after
+{
+    width: 100%;
+    border: 1px solid none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+header h1:hover
+{
+    cursor: pointer;
+}
+#title
+{
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+#title h1
+{
+    margin-left: 15px;
+}
+
+#logo
+{
+    margin-top: 5%;
+    width: 10%;
+    height: 10%;
+}
+
+/* button */
+#panel-btn
+{
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-bottom: 1%;
+    width: 97%;
+    border: 1px solid var(--red-unonotrans);
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    justify-content: center;
+    background: var(--red-uno);
+}
+.btn
+{
+    display: block;
+    margin: 20px;
+    font-size: 1.2em;
+    border: none;
+    color: #333;
+    padding: 5px 20px;
+    background: var(--main-color);
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 6px var(--effect-btn);
+    text-decoration: none;
+}
+
+.btn:hover
+{
+    box-shadow: 0 4px var(--effect-btn);
+    top: 2px;
+}
+.btn:active
+{
+    box-shadow: 0 2px var(--effect-btn);
+    top: 4px;
+}
+
+
+/* container */
+.container
+{
+    width: 98%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+#game
+{
+    display: block;
+    width: 78%;
+    height: 1fr;
+    border: 1px solid var(--red-unonotrans);
+    background: var(--red-uno);
+    border-radius: 0px 0px 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info
+{
+    display: block;
+    margin-left: 1%;
+    width: 20%;
+    height: 1fr;
+    border: 1px solid var(--red-unonotrans);
+    background: var(--red-uno);
+    color: var(--main-color);
+    text-shadow: 2px 2px 1px var(--effect-btn);
+    border-radius: 0px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+}
+#info div 
+{
+    margin: 0 auto;
+    padding-top: 20px;
+    cursor: pointer;
+}
+#info iframe
+{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+#info audio
+{
+    width: 100%;
+}
+
+
+/* footer */
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    color: aquamarine;
+    background-color: rgba(128, 128, 128, 0.521);
+    border-radius: 40px;
+
+}
+footer a
+{
+    color: white;
+}
+footer a:hover
+{
+    color: var(--main-color);
+    text-shadow: 2px 2px 1px var(--effect-btn);
+}
+
+.footer_left
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    border-right: 1px solid var(--main-color);
+}
+
+.footer_right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+}
+
+.footer_right p
+{
+    margin: 0px auto;
+    padding: 10px;
+    cursor: pointer;
+}
+.musique_ref
+{
+    border: 1px solid var(--main-color);
+    margin: 15px;
+    border-radius: 40px;
+}
+.musique_ref > p 
+{
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* animation */
+.move
+{
+    animation: color 1s infinite ease-in;
+}
+
+
+@keyframes color
+{
+    to
+    {
+        color: var(--main-color);
+    }
+}
+
+
+/* root */
+
+:root
+{
+    --main-color : #f8da27 ;
+    --effect-btn : rgb(88, 88, 90);
+    --red-uno : rgba(237, 28, 35, 0.7);
+    --red-unonotrans : rgb(237, 28, 35);
+}
+
+
+/* card */
+.panel_card
+{
+    display: flex;
+}
+.card_all
+{
+    display: block;
+    height:85px; 
+    width:60px;
+	border-radius: 10px 10px 10px 10px;
+	border:solid 1px rgba(0, 0, 0, 0.671);
+    background:white;
+    margin: 10px;
+    box-shadow: 2px 2px 1px black;
+
+}
+
+.card_all:hover
+{
+    animation: return 1s linear ;
+}
+
+@keyframes return
+{
+
+}
+
+.card
+{
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    margin: 5px;
+	width:50px;
+	height: 75px;
+	border-radius: 10px;
+}
+
+.back
+{
+    display: block;
+    background-color: red;
+	border-radius: 70px 10px 70px 10px;
+    height:60px;
+    width:49px;
+    border: 1px solid red;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.body_card
+{
+    display: block;
+	border-radius: 60px 10px 60px 10px;
+    height:60px;
+    width:49px;
+    border: 1px solid white;
+    background-color:white;
+    margin: 0 auto;
+    margin-top: 5px;
+
+}
+
+
+.centreNumber
+{
+    padding-top: 15px;
+    padding-left: 19px;
+    font-size: 1.5em;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+    width:20px;
+    height: 20px;
+}
+
+.red{background-color: red;color: red;}
+.blue{background-color: blue;color: blue;}
+.green{background-color: green;color: green;}
+.orange{background-color: orange;color: orange;}
+.black{background-color: black;}
+
+
+
+

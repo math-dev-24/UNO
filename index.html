@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman&display=swap"
+      rel="stylesheet"
+    />
+    <!-- reste -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>UNO | Mathieu | CDT</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="title">
+        <img src="img/logo.png" alt="Logo" id="logo" />
+        <h1 class="underline">Project | Replique UNO</h1>
+      </div>
+      <div id="panel-btn">
+        <a href="#" class="home btn-home btn"
+          >Home<span class="move">_</span></a
+        >
+        <a href="#" class="game btn-game btn">Game</a>
+        <a href="#" class="stat btn-stat btn">Stat</a>
+        <a href="#" class="player btn-player btn">Player</a>
+      </div>
+      <div class="log"></div>
+    </header>
+
+    <div class="container">
+      <div id="game">
+        <div class="panel_card">
+          <div class="card_all">
+            <div class="card green">
+              <div class="body_card">
+                <div class="centreNumber">8</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card_all">
+            <div class="card red">
+              <div class="body_card">
+                <div class="centreNumber">8</div>
+              </div>
+            </div>
+          </div>
+          <div class="card_all">
+            <div class="card orange">
+              <div class="body_card">
+                <div class="centreNumber">2</div>
+              </div>
+            </div>
+          </div>
+          <div class="card_all">
+            <div class="card blue">
+              <div class="body_card">
+                <div class="centreNumber">8</div>
+              </div>
+            </div>
+          </div>
+          <div class="card_all">
+            <div class="card black">
+              <div class="back"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="sandOfTime"></div>
+      </div>
+
+      <aside id="info">
+        <!-- pseudo -->
+        <div id="name" class="underline">Mon pseudo</div>
+        <!-- Email si enregistrer sinon message vous n'êtes pas enregistrer -->
+        <div id="register" class="underline">#23108843</div>
+        <!-- Score -->
+        <div class="score underline">
+          <span>Score :</span><span id="number-score"> 950</span>
+        </div>
+        <!-- Classement général -->
+        <div class="classement underline">
+          <span>Vous êtes </span><span id="number-classement">5ième</span>
+        </div>
+        <!-- le MP3 juste avec Play pause -->
+        <div id="sound">
+          <audio controls>
+            <source src="musique/song.mp3" type="audio/mpeg" />
+            <p>Votre navigateur ne peux pas le lire</p>
+          </audio>
+        </div>
+        <!-- Video YT -->
+        <div id="movie">
+          <iframe
+            src="https://www.youtube.com/watch?v=QPqRmIEG1Qc"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="footer_left">
+        <p>Site & jeu créer en tant que projet éducatif à but non lucratif.</p>
+        <p>
+          Travaille basé sur le jeu UNO crée par Merle ROBBINS Dont le site se
+          trouve <a href="#">ici</a>
+        </p>
+      </div>
+      <div class="footer_right">
+        <p>
+          Tutoriel vidéo pris sur Youtube par la chaine de WikiHow se trouvant
+          <a href="https://www.youtube.com/watch?v=QPqRmIEG1Qc" target="_blank"
+            >ici</a
+          >
+        </p>
+        <p>
+          Basé sur le site
+          <a href="https://www.wikihow.com/Main-Page" target="_blank"
+            >WikiHow</a
+          >
+        </p>
+        <div class="musique_ref">
+          <p class="underline">Musique :</p>
+          <p>Titre: Shine</p>
+          <p>Auteur: Onycs</p>
+          <p>Source: https://soundcloud.com/onycsmusic</p>
+          <p>Licence: https://creativecommons.org/licenses/by/3.0/deed.fr</p>
+          <p>Télechargement (8MB): https://auboutdufil.com/?id=598</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
